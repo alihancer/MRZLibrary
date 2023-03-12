@@ -1,0 +1,88 @@
+﻿<rrx>
+<!-- === .NET Action Definition and Help === -->
+<!-- Licensed Materials - Property of IBM
+
+ 5725-C15
+ © Copyright IBM Corp. 1994, 2021 All Rights Reserved
+ US Government Users Restricted Rights - Use, duplication or
+ disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ -->
+
+<!-- format: <net ref="C#Namespace.Class"> -->
+  <!-- Actions and Properties defined here are displayed in alphabetical order in DStudio -->
+  <!-- An example custom action that takes multiple parameters. -->  
+  <!-- This definition must match the c# menthod -->
+  <net ref="MRZLibrary.MRZParserActions">
+  <h>
+    Put information here that will provide an overview of the action library.
+    Tell people how to use the action library, when to use it and why to use it.<br/>
+  </h>
+	  <method name="CreatePassportVariables">
+		  <p name="MRZFirstLine" type="string" qi="This is a example string type.  Smart parameters are supported."/>
+		  <p name="MRZSecondLine" type="string" qi="This is a example string type.  Smart parameters are supported."/>
+		  <ap>
+			  Any additional parameter information can be placed here.<br/><br/>
+
+			  The name of the parameter here is not required to be identical to what is written
+			  in the code, but the type must be identical.  It is recommended to use a meaningful
+			  name here in the RRX to help the user understand what is required.
+			  This name is displayed in Datacap Studio.<br/><br/>
+
+			  If the action needs to support smart parameters, then the type needs to be string
+			  even if the parameter expected is ultimately a integer, bool, etc.  The C# code will
+			  have to convert the type after resolving the smart parameter.<br/>
+		  </ap>
+		  <h>
+			  Put your action description here.<br/><br/>
+
+			  More description here.
+			  <e>
+				  <b>MyAction("123")</b><br/>
+				  This is the action example.
+			  </e>
+		  </h>
+		  <lvl>All levels.</lvl>
+		  <ret>
+			  <b>True,</b> if the action succeeds.  Otherwise, <b>False.</b>
+		  </ret>
+		  <see>
+			  Refer the user to other related actions and documentation.
+		  </see>
+	  </method>
+
+	  <method name="CreateIDDocVariables">
+		  <p name="MRZFirstLine" type="string" qi="This is a example string type.  Smart parameters are supported."/>
+		  <p name="MRZSecondLine" type="string" qi="This is a example string type.  Smart parameters are supported."/>
+		  <p name="MRZThirdLine" type="string" qi="This is a example string type.  Smart parameters are supported."/>
+		  <ap>
+			  Any additional parameter information can be placed here.<br/><br/>
+
+			  The name of the parameter here is not required to be identical to what is written
+			  in the code, but the type must be identical.  It is recommended to use a meaningful
+			  name here in the RRX to help the user understand what is required.
+			  This name is displayed in Datacap Studio.<br/><br/>
+
+			  If the action needs to support smart parameters, then the type needs to be string
+			  even if the parameter expected is ultimately a integer, bool, etc.  The C# code will
+			  have to convert the type after resolving the smart parameter.<br/>
+		  </ap>
+		  <h>
+			  Put your action description here.<br/><br/>
+
+			  More description here.
+			  <e>
+				  <b>MyAction("123")</b><br/>
+				  This is the action example.
+			  </e>
+		  </h>
+		  <lvl>All levels.</lvl>
+		  <ret>
+			  <b>True,</b> if the action succeeds.  Otherwise, <b>False.</b>
+		  </ret>
+		  <see>
+			  Refer the user to other related actions and documentation.
+		  </see>
+	  </method>
+
+</net>
+</rrx>
